@@ -27,7 +27,7 @@ function Form({ addOrUpdateItem, itemToEdit }) {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <button type="submit">
+      <button className="botonesAddOrUpd" type="submit">
         {itemToEdit ? 'Actualizar' : 'Agregar'}
       </button>
     </form>

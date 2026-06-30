@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Form from './components/Form';
 import List from './components/List';
-import Item from './components/Item';
-import './index.css';
+import './App.css';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -42,14 +41,13 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>CRUD con LocalStorage</h1>
-
+    <div className="Contenedor-Principal">
+      <h1 className="Titulo">CRUD con LocalStorage</h1>
+      <p className="Subtitulo">Certament 4 Front End UwU</p>
       <Form
         addOrUpdateItem={addOrUpdateItem}
         itemToEdit={itemToEdit}
       />
-
       <List
         items={items}
         deleteItem={deleteItem}
